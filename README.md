@@ -55,23 +55,74 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 ## <a name="features">🔋 Features</a>
 
-### Features of the 3D Portfolio Project
+### Features of Remi Beltram's 3D Portfolio
 
-👉 Animated 3D models and reveal animations
+A cutting-edge interactive portfolio showcasing my skills in web development, security testing, and creative coding. Built with React, Three.js, and modern web technologies.
 
-👉 Realistic lighting and shadows
+![Portfolio Preview](public/images/readme.png)
 
-👉 GSAP-powered scroll interactions
+## ✨ Features
 
-👉 Responsive design with Tailwind CSS and Flexbox/Grid
+- **Interactive 3D Models** - Fully interactive Three.js powered elements
+- **Responsive Design** - Optimized for all device sizes
+- **Advanced Animations** - GSAP-powered smooth animations and transitions
+- **Filterable Tech Stack** - Categorized view of my extensive tech skills
+- **Secure Contact Form** - EmailJS integration for direct messaging
+- **Modern UI/UX** - Sleek design with glassmorphism and gradient effects
 
-👉 Micro Interactions
+## 🛠️ Tech Stack
 
-👉 Multi-section layout (About, Projects, Contact)
+- **Frontend**: React, Three.js, TailwindCSS
+- **Animation**: GSAP
+- **3D Rendering**: Three.js, React Three Fiber
+- **Styling**: TailwindCSS, CSS Modules
+- **Form Handling**: EmailJS
+- **Deployment**: Vercel
 
-👉 Mobile optimized 3D experience
+## 🚀 Getting Started
 
-and many more, including code architecture and reusability.
+1. Clone this repository
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## 📧 Contact Me
+
+- Email: r.beltram@pitturagroup.com
+- GitHub: [github.com/remiangelo](https://github.com/remiangelo)
+- Instagram: [@remibeltram](https://instagram.com/remibeltram)
+- Twitch: [twitch.tv/ethericwtf](https://twitch.tv/ethericwtf)
+- Discord: [discord.gg/prodetheric](https://discord.gg/prodetheric)
+
+## 🔐 Security & Privacy
+
+This portfolio includes advanced security measures and does not collect any personal data from visitors.
+
+## 📱 Deployment
+
+Deployed using [Vercel](https://vercel.com) for optimal performance and reliability.
+
+```bash
+# Build for production
+npm run build
+
+# Deploy to Vercel
+npx vercel --prod
+```
 
 ## <a name="quick-start">🤸 Quick Start</a>
 

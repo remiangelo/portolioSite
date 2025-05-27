@@ -81,7 +81,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] xl:items-center items-start justify-center;
   }
 
   .hero-text {
@@ -449,7 +449,9 @@ section {
       white,
       #ffffff00 100deg
     );
+  -webkit-mask-composite: source-in;
   mask-composite: intersect;
+  -webkit-mask-clip: padding-box, border-box;
   mask-clip: padding-box, border-box;
   opacity: 0;
   transition: 0.5s ease;

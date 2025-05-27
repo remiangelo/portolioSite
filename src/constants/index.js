@@ -1,9 +1,5 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
-  },
-  {
     name: "Experience",
     link: "#experience",
   },
@@ -12,27 +8,27 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Contact",
+    link: "#contact",
   },
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Web Apps", imgPath: "/images/concepts.svg" },
+  { text: "Security", imgPath: "/images/ideas.svg" },
+  { text: "Hacking", imgPath: "/images/designs.svg" },
+  { text: "Music", imgPath: "/images/ideas.svg" },
+  { text: "Innovation", imgPath: "/images/concepts.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Art", imgPath: "/images/designs.svg" },
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 5, suffix: "+", label: "Years Coding" },
+  { value: 50, suffix: "+", label: "Web Projects" },
+  { value: 10, suffix: "+", label: "Instruments Played" },
+  { value: 100, suffix: "%", label: "Passion for Tech" },
 ];
 
 const logoIconsList = [
@@ -74,18 +70,23 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Full-Stack Development",
+    desc: "Building comprehensive web applications from concept to deployment.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Security & Hacking",
+    desc: "Expertise in grey hat operations and application security testing.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Creative Solutions",
+    desc: "Combining technical knowledge with creative thinking to solve complex problems.",
+  },
+  {
+    imgPath: "/images/seo.png",
+    title: "Musical Versatility",
+    desc: "Playing and creating music across multiple instruments and genres.",
   },
 ];
 
@@ -99,16 +100,20 @@ const techStackImgs = [
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    name: "Go Developer",
+    imgPath: "/images/logos/go.png",
   },
   {
-    name: "Interactive Developer",
+    name: "Rust Developer",
+    imgPath: "/images/logos/rust.png",
+  },
+  {
+    name: "Three.js Developer",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    name: "Security Specialist",
+    imgPath: "/images/logos/security.png",
   },
 ];
 
@@ -126,19 +131,19 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Node.js Developer",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "Three.js Developer",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Security Specialist",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -147,39 +152,39 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Remi's expertise in web development and security testing provided our company with both an exceptional product and confidence in its security integrity.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Full-Stack Web Developer",
+    date: "2023 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developing comprehensive web applications using React, Next.js, and Node.js.",
+      "Implementing security best practices and performing penetration testing.",
+      "Building responsive and intuitive user interfaces with modern frameworks.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Remi's work on our security infrastructure identified critical vulnerabilities that could have resulted in significant data breaches.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Security Specialist",
+    date: "2022 - Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Conducting penetration testing and security audits for web applications.",
+      "Developing security tools using Python, Go, and Rust.",
+      "Consulting on implementation of security best practices for development teams.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Remi brought innovative ideas to our 3D visualization projects, combining technical expertise with an artistic approach to create stunning interactive experiences.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Creative Developer",
+    date: "2021 - 2023",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Creating interactive 3D experiences using Three.js and WebGL.",
+      "Developing custom WebGL shaders and effects for unique visual presentations.",
+      "Collaborating with designers to translate creative concepts into functional code.",
     ],
   },
 ];
@@ -201,65 +206,74 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Security Client",
+    mentions: "@securityfirm",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Remi's expertise in security testing helped us identify and patch critical vulnerabilities in our system. His ability to think like a hacker while maintaining ethical boundaries is impressive.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Creative Agency",
+    mentions: "@creativeagency",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Remi on our interactive portfolio was an amazing experience. He combined technical expertise with creative flair to deliver something truly unique.",
     imgPath: "/images/client3.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Tech Startup",
+    mentions: "@techstartup",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Remi built our entire web application stack and included security testing as part of the process. The result was a robust, secure platform that we could confidently launch to our users.",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Music Production",
+    mentions: "@musicprod",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Beyond his coding skills, Remi's understanding of music production helped him create exactly the kind of interactive audio visualization we needed for our project.",
     imgPath: "/images/client5.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "E-commerce Platform",
+    mentions: "@ecommerce",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Remi's implementation of our payment processing system was flawless. His attention to security details gave us peace of mind when handling sensitive customer data.",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Game Studio",
+    mentions: "@gamestudio",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Collaborating with Remi on our WebGL game was fantastic. His knowledge of 3D graphics and performance optimization resulted in a smooth experience that our players love.",
     imgPath: "/images/client6.png",
   },
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "Instagram",
+    icon: "fab fa-instagram",
+    link: "https://instagram.com/remibeltram"
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
+    name: "Twitch",
+    icon: "fab fa-twitch",
+    link: "https://twitch.tv/ethericwtf"
   },
   {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "Email",
+    icon: "fas fa-envelope",
+    link: "mailto:r.beltram@pitturagroup.com"
   },
   {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    name: "GitHub",
+    icon: "fab fa-github",
+    link: "https://github.com/remiangelo"
+  },
+  {
+    name: "Discord",
+    icon: "fab fa-discord",
+    link: "https://discord.gg/prodetheric"
   },
 ];
 
