@@ -224,12 +224,37 @@ const Hero = () => {
               ))}
             </div>
 
-            {/* Enhanced CTA button */}
-            <Button
-              text="EXPLORE MY WORLD"
-              className="md:w-80 md:h-16 w-60 h-12 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 shadow-glow border border-white/10 font-bold tracking-widest"
-              id="counter"
-            />
+            {/* Completely redesigned cyberpunk button */}
+            <div className="mt-4">
+              <a 
+                href="#counter" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.getElementById("counter");
+                  if (target) {
+                    const offset = window.innerHeight * 0.15;
+                    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top, behavior: "smooth" });
+                  }
+                }}
+                className="group relative inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-5 overflow-hidden font-mono font-medium tracking-widest text-white bg-black border-2 border-purple-500 rounded-lg hover:border-blue-500 active:border-cyan-400 transition-all duration-300"
+              >
+                {/* Animated background */}
+                <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-purple-600 rounded-full group-hover:w-full group-hover:h-56 opacity-10"></span>
+                <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-purple-600"></span>
+                
+                {/* Glitch effect lines */}
+                <span className="absolute inset-0 w-full h-0.5 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></span>
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></span>
+                
+                {/* Text with neon effect */}
+                <span className="relative flex items-center">
+                  <span className="mr-3 text-xs">&lt;</span>
+                  <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-blue-400 transition-all duration-500">ENTER_CYBERSPACE</span>
+                  <span className="ml-3 text-xs">/&gt;</span>
+                </span>
+              </a>
+            </div>
           </div>
         </header>
 
